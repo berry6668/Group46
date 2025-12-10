@@ -1,0 +1,93 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "../protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/CardboardBox.proto"
+
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation 0.5805575707617834 0.5805575707617834 -0.570881611249087 2.103559693899575
+  position -0.9575565643199003 -0.3993099431869705 8.786517227013976
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 4 4
+  appearance PBRAppearance {
+    baseColor 0.333333 1 0.498039
+    roughness 1
+    metalness 0
+  }
+}
+CardboardBox {
+  translation -0.22 -1.15 0.15
+  name "cardboard box(2)"
+  size 0.3 0.3 0.3
+}
+CardboardBox {
+  translation -1.08 0.33 0.15
+  name "cardboard box(1)"
+  size 0.3 0.3 0.3
+}
+CardboardBox {
+  translation 0.91 0.92 0.15
+  size 0.3 0.3 0.3
+}
+Wall {
+  translation -2.03984e-06 2 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(3)"
+  size 0.05 4 0.25
+}
+DirectionalLight {
+  direction -0.5 -1 -0.5
+}
+E-puck {
+  hidden position_0_0 63.42898729532963
+  hidden position_0_1 -29.19880778294784
+  hidden linearVelocity_0 2.1949869421096634e-16 3.338594354548512e-16 -2.3684757858670008e-17
+  hidden angularVelocity_0 3.675253385613407e-14 -7.582239286201701e-14 -8.435357473421245e-15
+  hidden rotation_1 0 1 0 0.5971342235337618
+  hidden linearVelocity_1 1.0506585481879684e-15 4.720061943826231e-16 -3.7747687451036724e-16
+  hidden angularVelocity_1 1.811756525492842e-14 -2.6201374713339114e-14 -6.350569342430037e-15
+  hidden rotation_2 0 -0.9999999999999999 0 4.066066554229493
+  hidden linearVelocity_2 -1.7353890153764099e-15 -3.145025860312389e-16 6.883390878965957e-16
+  hidden angularVelocity_2 4.666417792739047e-14 -1.7112933697890923e-13 -7.744549674427233e-15
+  translation -0.0652739256143023 -0.03141948668656697 -3.198099789494639e-05
+  rotation 2.333469039758454e-10 -1.5438892688223794e-10 -1 1.1689427419541676
+  controller "gesture_cam"
+}
+SolidBox {
+  translation 1.13 -1.145 0.00010312
+  rotation 1 0 0 1.5708
+  size 0.6 2.5e-07 0.6
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    roughness 0.5
+    metalness 0
+  }
+  enableBoundingObject FALSE
+}
+Wall {
+  translation -2 0 0
+  size 0.05 4 0.25
+}
+Wall {
+  translation 2 0 0
+  name "wall(1)"
+  size 0.05 4 0.25
+}
+Wall {
+  translation 0 -2 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(2)"
+  size 0.05 4 0.25
+}
