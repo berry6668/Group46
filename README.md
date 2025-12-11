@@ -119,15 +119,16 @@ python gesture_client.py
 This activates the webcam, detects gestures, classifies them, and sends commands to Webots.
 
 ## Model Training & Testing
-### Train SVM model
+### Train SVM model（optional）
 ```
 python svmModle/train_svm.py
 ```
-### Collect training samples
+### Collect training samples（optional）
 ```
 python svmModle/collect_svm_data.py
 ```
-### Evaluate / generate confusion matrix
+Note：The save directory uses relative paths. Modify if needed.
+### Evaluate / generate confusion matrix（optional）
 ```
 python svmModle/TEST/svm test.py
 python svmModle/TEST/svm_confusion_matrix.py
@@ -143,6 +144,6 @@ This script compares keyboard vs. gesture control and evaluates LED feedback.
 ## Acknowledgements
 This project was developed by Group 46.
 
-Group member:Yiyan Ge, Ge Lin, Zhu Jiang, Tianle Feng
+Group member:Yiyan Ge, Ge Lin, Jiang Zhu, Tianle Feng
 
 We thank the Intelligent Robotics teaching team for their guidance and support.
