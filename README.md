@@ -1,4 +1,4 @@
-# Group46 – GestureCommand Project
+# Group46 – Gesture Command Project
 ## Overview
 
 GestureCommand is the final project for the Intelligent Robotics module at the University of Birmingham.
